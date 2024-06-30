@@ -1,0 +1,116 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--background-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+:root {
+  --background-color: #f0f0f0;
+  --text-color: #000;
+  --board-background-color: #fff;
+  --cell-border-color: #000;
+  --cell-hover-color: #e0e0e0;
+}
+
+body.dark {
+  --background-color: #333;
+  --text-color: #fff;
+  --board-background-color: #444;
+  --cell-border-color: #fff;
+  --cell-hover-color: #555;
+}
+
+#gameOptions,
+#game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--board-background-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: var(--text-color);
+}
+
+#gameOptions input {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 150px;
+}
+
+#gameOptions button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#gameOptions button:hover {
+  background-color: #0056b3;
+}
+
+#board {
+  display: grid;
+  gap: 2px;
+  margin: 20px 0;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background-color: var(--board-background-color);
+  border: 2px solid var(--cell-border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cell:hover {
+  background-color: var(--cell-hover-color);
+}
+
+.x {
+  color: #ff6b6b;
+}
+
+.circle {
+  color: #4ecdc4;
+}
+
+.winning-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.winning-message button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.winning-message button:hover {
+  background-color: #0056b3;
+}
+
+#turnAnnouncement {
+  font-size: 20px;
+  margin-bottom: 20px;
+}

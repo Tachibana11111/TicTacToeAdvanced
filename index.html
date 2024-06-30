@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Caro</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="gameOptions">
+      <h2>Cài đặt trò chơi</h2>
+      <label for="boardSizeX">Số ô ngang (8-40):</label>
+      <input type="number" id="boardSizeX" min="8" max="30" value="20" />
+      <label for="boardSizeY">Số ô dọc (8-40):</label>
+      <input type="number" id="boardSizeY" min="8" max="30" value="20" />
+      <label for="player1Name">Tên người chơi 1 (X):</label>
+      <input type="text" id="player1Name" placeholder="Người chơi 1" required />
+      <label for="player2Name">Tên người chơi 2 (O):</label>
+      <input type="text" id="player2Name" placeholder="Người chơi 2" required />
+      <button id="startGameButton">Bắt đầu</button>
+      <button id="toggleThemeButton">Chuyển đổi nền</button>
+    </div>
+    <div id="game" style="display: none">
+      <h2 id="turnAnnouncement"></h2>
+      <div id="board"></div>
+      <div id="winningMessage" class="winning-message" style="display: none">
+        <div data-winning-message-text></div>
+        <button id="restartButton">Chơi lại</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
