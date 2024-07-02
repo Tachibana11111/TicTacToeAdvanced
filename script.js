@@ -107,7 +107,7 @@ let X_SIZE = 8; // Mặc định số ô ngang
       // Chuyển sang tiếng Nhật
       function switchToJapanese() {
         document.documentElement.lang = "ja";
-        document.title = "カロゲーム";
+        document.title = "五目並べ";
 
         document.getElementById("startGameButton").innerText = "ゲームを始める";
         document.getElementById("toggleThemeButton").innerText =
