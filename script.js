@@ -107,7 +107,7 @@ let X_SIZE = 8; // Mặc định số ô ngang
       // Chuyển sang tiếng Nhật
       function switchToJapanese() {
         document.documentElement.lang = "ja";
-        document.title = "ゲームカロ";
+        document.title = "カロゲーム";
 
         document.getElementById("startGameButton").innerText = "ゲームを始める";
         document.getElementById("toggleThemeButton").innerText =
@@ -140,7 +140,7 @@ let X_SIZE = 8; // Mặc định số ô ngang
       // Chuyển sang tiếng Việt
       function switchToVietnamese() {
         document.documentElement.lang = "vi";
-        document.title = "Trò chơi Caro";
+        document.title = "Cờ Caro";
         document.getElementById("startGameButton").innerText =
           "Bắt đầu trò chơi";
         document.getElementById("toggleThemeButton").innerText =
@@ -173,7 +173,7 @@ let X_SIZE = 8; // Mặc định số ô ngang
       // Chuyển sang tiếng Anh
       function switchToEnglish() {
         document.documentElement.lang = "en";
-        document.title = "Game Caro";
+        document.title = "Caro Game";
         document.getElementById("startGameButton").innerText = "Start Game";
         document.getElementById("toggleThemeButton").innerText = "Toggle Theme";
         document.getElementById("toggleLanguageButton").innerText =
