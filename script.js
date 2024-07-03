@@ -362,5 +362,6 @@ let X_SIZE = 8; // Mặc định số ô ngang
 
       restartButton.addEventListener("click", () => {
         gameElement.style.display = "none"; // Ẩn phần bảng chơi
-        gameOptionsElement.style.display = "block"; // Hiển thị phần nhập liệu
+        gameOptionsElement.style.display = "flex"; // Hiển thị phần nhập liệu
+        gameOptionsElement.style.flexDirection = "column";  
       });
