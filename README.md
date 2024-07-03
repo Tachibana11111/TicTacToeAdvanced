@@ -1,7 +1,7 @@
 # TicTacToeAdvanced
 Đây là một trò chơi Cờ Caro đơn giản được viết bằng HTML, CSS và JavaScript.
 
-- Chơi tại đây: tachibana11111.github.io/TicTacToeAdvanced
+- Chơi tại đây: https://tachibana11111.github.io/TicTacToeAdvanced
 
 ## Giới thiệu
 
