@@ -30,7 +30,7 @@ let X_SIZE = 8; // Mặc định số ô ngang
       const turnAnnouncementMessage = {
         vi: "tới lượt",
         en: "'s turn!",
-        ja: "の番です！",
+        ja: "さんの番です！",
       };
 
       const winningMessageText = {
@@ -44,7 +44,7 @@ let X_SIZE = 8; // Mặc định số ô ngang
         },
         ja: {
           draw: "引き分け！",
-          win: "勝ちました！",
+          win: "さんは勝ちました！",
         },
       };
       startGameButton.addEventListener("click", () => {
