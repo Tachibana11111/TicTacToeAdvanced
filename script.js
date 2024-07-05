@@ -25,12 +25,14 @@ let X_SIZE = 8; // Mặc định số ô ngang
         vi: "Vui lòng nhập tên cả hai người chơi.",
         en: "Please enter names for both players.",
         ja: "両方のプレイヤーの名前を入力してください。",
+        cn: "请输入两名球员的姓名。",   
       };
 
       const turnAnnouncementMessage = {
         vi: "tới lượt",
         en: "'s turn!",
         ja: "さんの番です！",
+        cn: "轮到了！",
       };
 
       const winningMessageText = {
@@ -45,6 +47,10 @@ let X_SIZE = 8; // Mặc định số ô ngang
         ja: {
           draw: "引き分け！",
           win: "さんは勝ちました！",
+        },
+        cn: {
+          draw: "和棋",
+          win: "赢",
         },
       };
       startGameButton.addEventListener("click", () => {
@@ -96,6 +102,9 @@ let X_SIZE = 8; // Mặc định số ô ngang
             switchToVietnamese();
             break;
           case "vi":
+            switchToChinese();
+            break;
+          case "cn":
             switchToEnglish();
             break;
           default:
@@ -199,6 +208,34 @@ let X_SIZE = 8; // Mặc định số ô ngang
         updateTurnAnnouncement();
       }
 
+      function switchToChinese() {
+        document.documentElement.lang = "cn";
+        document.title = "井字游戏";
+        document.getElementById("startGameButton").innerText = "开始游戏";
+        document.getElementById("toggleThemeButton").innerText = "切换主题";
+        document.getElementById("toggleLanguageButton").innerText =
+          "切换语言";
+        document.getElementById("gameOptions").querySelector("h2").innerText =
+          "游戏设置";
+        document.getElementById("boardSizeX").previousElementSibling.innerText =
+          "行尺寸(8-30):";
+        document.getElementById("boardSizeY").previousElementSibling.innerText =
+          "立柱尺寸(8-30):";
+        document.getElementById(
+          "player1Name"
+        ).previousElementSibling.innerText = "玩家1名字 （X）";
+        document.getElementById(
+          "player2Name"
+        ).previousElementSibling.innerText = "玩家2名字 （O）";
+        document.getElementById("restartButton").innerText = "重新开始";
+        document.getElementById("turnAnnouncement").innerText = `${
+          circleTurn ? player2Name : player1Name
+        } 将先行`;
+
+        currentLanguage = "cn";
+        updateTurnAnnouncement();
+      }
+
       function updateTurnAnnouncement() {
         turnAnnouncement.innerText = `${
           circleTurn ? player2Name : player1Name
@@ -209,6 +246,7 @@ let X_SIZE = 8; // Mặc định số ô ngang
         vi: "Số ô ngang và dọc phải từ 8 đến 30.",
         en: "Board size must be between 8 and 30.",
         ja: "横と縦のマスは8から30までの数字でなければなりません。",
+        cn: "棋盘大小必须在 8 到 30 之间。",
       };
 
       function createBoard() {
