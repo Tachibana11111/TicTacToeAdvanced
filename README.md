@@ -14,7 +14,7 @@ Trò chơi Cờ Caro là một trò chơi cờ trí tuệ hai người chơi, m�
 - Giao diện đơn giản và thân thiện với người chơi.
 - Hiển thị tên người chiến thắng sau khi kết thúc trò chơi.
 - Nút chơi lại để bắt đầu trò chơi mới.
-- Hỗ trợ đa ngôn ngữ (hiện tại có tiếng Anh,tiếng Việt,tiếng Nhật).
+- Hỗ trợ đa ngôn ngữ (hiện tại có tiếng Anh,tiếng Việt,tiếng Nhật, tiếng Trung).
 
 ## Cách chơi
 
