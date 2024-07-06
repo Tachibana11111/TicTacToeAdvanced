@@ -56,7 +56,7 @@ body.dark {
   width: 150px;
 }
 
-#gameOptions button,a {
+#gameOptions button {
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
@@ -66,7 +66,7 @@ body.dark {
   margin-top: 10px;
 }
 
-#gameOptions button,a:hover {
+#gameOptions button:hover {
   background-color: #0056b3;
 }
 
@@ -83,6 +83,21 @@ body.dark {
 #toggleLanguageButton:hover {
   background-color: #218838; /* Darker green color on hover */
 }
+
+#returnButton {
+  padding: 10px 20px;
+  background-color: #28a745; /* Green color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#returnButton:hover {
+  background-color: #218838; /* Darker green color on hover */
+}
+
 
 #board {
   display: grid;
