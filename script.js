@@ -123,6 +123,7 @@ let X_SIZE = 8; // Mặc định số ô ngang
           "テーマの切り替え";
         document.getElementById("toggleLanguageButton").innerText =
           "言語を切り替える";
+        document.getElementById("returnButton").innerText = "ゲームハブ戻る ";
         document.getElementById("gameOptions").querySelector("h2").innerText =
           "ゲーム設定";
         document.getElementById("boardSizeX").previousElementSibling.innerText =
@@ -156,6 +157,7 @@ let X_SIZE = 8; // Mặc định số ô ngang
           "Chuyển đổi nền";
         document.getElementById("toggleLanguageButton").innerText =
           "Chuyển đổi ngôn ngữ";
+        document.getElementById("returnButton").innerText = "Quay lại GameHub";
         document.getElementById("gameOptions").querySelector("h2").innerText =
           "Cài đặt trò chơi";
         document.getElementById("boardSizeX").previousElementSibling.innerText =
@@ -187,6 +189,7 @@ let X_SIZE = 8; // Mặc định số ô ngang
         document.getElementById("toggleThemeButton").innerText = "Toggle Theme";
         document.getElementById("toggleLanguageButton").innerText =
           "Switch Language";
+        document.getElementById("returnButton").innerText = "Return GameHub";
         document.getElementById("gameOptions").querySelector("h2").innerText =
           "Game Setup";
         document.getElementById("boardSizeX").previousElementSibling.innerText =
@@ -215,6 +218,7 @@ let X_SIZE = 8; // Mặc định số ô ngang
         document.getElementById("toggleThemeButton").innerText = "切换主题";
         document.getElementById("toggleLanguageButton").innerText =
           "切换语言";
+        document.getElementById("returnButton").innerText = "返回游戏汇";
         document.getElementById("gameOptions").querySelector("h2").innerText =
           "游戏设置";
         document.getElementById("boardSizeX").previousElementSibling.innerText =
