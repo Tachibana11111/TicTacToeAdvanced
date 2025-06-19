@@ -407,3 +407,17 @@ let X_SIZE = 8; // Mặc định số ô ngang
         gameOptionsElement.style.display = "flex"; // Hiển thị phần nhập liệu
         gameOptionsElement.style.flexDirection = "column";  
       });
+
+const returnButton = document.getElementById('returnButton');
+
+  if (returnButton) {
+        returnButton.addEventListener('click', () => {
+           
+            if (window.parent !== window) {
+                window.parent.postMessage('closeGame', 'https://tachibana11111.github.io');
+            } else {
+                window.location.href = 'https://tachibana11111.github.io/GameHub';
+               
+            }
+        });
+    }
