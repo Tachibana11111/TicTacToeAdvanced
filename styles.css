@@ -161,7 +161,7 @@ body.dark {
     bottom: 20px; 
     left: 20px; 
     font-size: 3em; 
-    color: #f8f8f2;
+    color: var(--text-color);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
     transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
     z-index: 1000; 
